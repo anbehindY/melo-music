@@ -13,7 +13,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className='bg-right-bg-gradient bg-no-repeat bg-right-top'>
-        {children}
+          <div className='bg-left-bg-gradient bg-no-repeat bg-[left_bottom_0.5rem]'>
+          {children}
+          </div>
         </div>
       </body>
     </html>

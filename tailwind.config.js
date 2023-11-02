@@ -15,9 +15,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'right-bg-gradient': 'url(/bg-gradient-rt.svg)',
+        'left-bg-gradient': 'url(/bg-gradient-lt.svg)',
       },
       backgroundPosition: {
         'right': 'right 75%',
+      },
+      boxShadow: {
+        'listen-btn': '0 1px 38px 0 rgba(190, 12, 12, 0.82)',
+        'down-arrow': '0 0 34px 2px rgba(255, 33, 80, 0.7)',
       },
     },
   },
