@@ -7,11 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundClip: {
+        'text': 'text',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'right-bg-gradient': 'url(/bg-gradient-rt.svg)',
       },
+      backgroundPosition: {
+        'right': 'right 75%',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundClip: ['responsive'],
     },
   },
   plugins: [],
