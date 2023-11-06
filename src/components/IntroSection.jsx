@@ -10,8 +10,8 @@ const IntroSection = () => {
 			</div>
 			<div>
 				<div className='flex flex-col items-center gap-[12px]'>
-					<span className='bg-clip-text text-transparent text-[37px]  font-bold bg-gradient-to-r from-[#F857A6] via-pink-500 to-[#FF5858]'>
-						Melo <span className='text-white'>to your</span> Heart
+					<span className='text-[37px] gradient'>
+						Melo <span className='text-white font-semibold'>to your</span> Heart
 					</span>{' '}
 					<p className='font-[16px] leading-6 tracking-widest'>
 						With Melo Music, you can download and enjoy wide varieties of songs
