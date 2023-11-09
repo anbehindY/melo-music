@@ -6,7 +6,7 @@ import { PAYMENT_INFO } from '@/utils/data';
 
 const PremiumSection = () => {
 	return (
-		<section classname='flex flex-col items-center justify-center w-full'>
+		<section className='flex flex-col items-center justify-center w-full'>
 			<h2 className='text-[36px] font-semibold text-center leading-[42px] gradient w-[300px] mx-auto my-6'>
 				<span className='text-white'>Join</span> Melo&apos;s Premium
 			</h2>
