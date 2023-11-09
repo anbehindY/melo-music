@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body>
-				<div className='bg-right-upper-gradient bg-right-top'>
+				<div className='bg-right-upper-gradient bg-no-repeat bg-right-top'>
 					{/* <div className='bg-left-upper-gradient bg-[0_300px]'>
 						<div className='bg-right-lower-gradient-gradient bg-[100%_92%]'>
 							<div className='bg-left-lower-gradient bg-[0_65%]'> */}

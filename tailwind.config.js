@@ -11,8 +11,10 @@ module.exports = {
 				text: 'text',
 			},
 			backgroundImage: {
-				'right-bg-gradient': 'url(/bg-gradient-rt.svg)',
-				'left-bg-gradient': 'url(/bg-gradient-lt.svg)',
+				'right-upper-gradient': 'url(/background/rightUpperGradient.png)',
+				'left-upper-gradient': 'url(/background/leftUpperGradient.png)',
+				'right-lower-gradient': 'url(/background/rightLowerGradient.png)',
+				'left-lower-gradient': 'url(/background/leftLowerGradient.png)',
 				'lay-phyu': 'url(/layphyu.svg)',
 				'big-bag': 'url(/bigbag.svg)',
 				'eternal-gosh': 'url(/eternalgosh.svg)',
