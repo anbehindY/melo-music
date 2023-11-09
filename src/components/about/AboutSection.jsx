@@ -24,14 +24,13 @@ const AboutSection = () => {
 				</h2>
 				<div className='flex gap-4 justify-center'>
 					{ARTISTS.map((artist) => (
-						<Artist artist={artist} key={artist} />
+						<Artist artist={artist[0]} key={artist[1]} name={artist[1]} />
 					))}
 				</div>
 			</div>
 			<div className='flex flex-col gap-6 items-center'>
-				<h2 className='text-[36px] font-semibold text-center leading-[42px]'>
-					Personalized<span className='break-line'></span>
-					<span className='gradient'> Playlists</span>
+				<h2 className='text-[36px] font-semibold text-center leading-[42px] !w-[250px]'>
+					Personalized <span className='gradient'> Playlists</span>
 				</h2>
 				<p className='px-8 font-[16px] leading-6 tracking-widest'>
 					No Wi-Fi? No problem. Download your favorite tracks and enjoy them on
@@ -60,11 +59,8 @@ const AboutSection = () => {
 				/>
 			</div>
 			<div className='flex flex-col gap-6 items-center'>
-				<h2 className='text-[36px] font-semibold text-center leading-[42px]'>
-					Discover{' '}
-					<span className='gradient'>
-						New <span className='break-line'></span>Music
-					</span>
+				<h2 className='text-[36px] font-semibold text-center leading-[42px] w-[250px]'>
+					Discover <span className='gradient'>New Music</span>
 				</h2>
 				<p className='px-8 font-[16px] leading-6 tracking-widest'>
 					No Wi-Fi? No problem. Download your favorite tracks and enjoy them on
@@ -77,7 +73,6 @@ const AboutSection = () => {
 					alt='New music art'
 				/>
 			</div>
-			<div className='flex gap-4 h-[400px] justify-center'></div>
 		</section>
 	);
 };
