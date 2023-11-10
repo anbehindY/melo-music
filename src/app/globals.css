@@ -24,27 +24,37 @@ body {
 			rgb(var(--background-end-rgb))
 		)
 		rgb(var(--background-start-rgb));
+	font-family: var(--font-instrument-sans);
+}
+
+h1,
+h2 {
+	font-family: var(--font-faustina);
 }
 
 .border-gradient {
-  position: relative;
-  color: #FFF;
-  background: #000;
-  border: solid 0px transparent;
-  border-radius: 10px;
+	position: relative;
+	color: #fff;
+	background: #000;
+	border: solid 0px transparent;
+	border-radius: 10px;
 }
 
 .border-gradient::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  border-radius: inherit;
-  background: linear-gradient(to right, rgba(248, 87, 166, 1), rgba(255, 88, 88, 1));
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	margin: -2px;
+	border-radius: inherit;
+	background: linear-gradient(
+		to right,
+		rgba(248, 87, 166, 1),
+		rgba(255, 88, 88, 1)
+	);
 }
 
 @layer components {

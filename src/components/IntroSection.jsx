@@ -10,9 +10,9 @@ const IntroSection = () => {
 			</div>
 			<div>
 				<div className='flex flex-col items-center gap-[12px]'>
-					<span className='text-[37px] gradient'>
+					<h1 className='text-[39px] gradient'>
 						Melo <span className='text-white font-semibold'>to your</span> Heart
-					</span>{' '}
+					</h1>
 					<p className='font-[16px] leading-6 tracking-widest'>
 						With Melo Music, you can download and enjoy wide varieties of songs
 						from classic traditional songs to epic trending music genres.
@@ -60,7 +60,9 @@ const IntroSection = () => {
 						</a>
 					</div>
 					<button className='flex justify-center items-center w-[40px] h-[40px] mt-4 rounded-full border-[3px] border-white hover:border-none hover:bg-gradient-to-r from-[#F857A6] via-pink-500 to-[#FF5858]'>
-						<HiArrowDown className='p-1 text-white text-center text-3xl rounded-full hover:shadow-down-arrow' />
+						<a href='#premiumSection'>
+							<HiArrowDown className='p-1 text-white text-center text-3xl rounded-full hover:shadow-down-arrow' />
+						</a>
 					</button>
 				</div>
 			</div>

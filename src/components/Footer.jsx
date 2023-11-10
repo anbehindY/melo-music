@@ -64,9 +64,9 @@ const Footer = () => {
           <li><BsInstagram className='text-white'/></li>
           <li><BsTiktok className='text-white'/></li>
         </ul>
-        <div className='flex gap-8 items-center justify-center'>
+        <div className='flex gap-6 items-center justify-center'>
           <Image src={'/Logo.svg'} alt='logo' width={93} height={35} />
-         <p className='text-xs leading-[22px]'> @2023<span className='gradient'>MID</span>.All rights served.</p>
+         <p className='leading-[22px]'> @2023<span className='gradient'> MID</span>. All rights served.</p>
         </div>
       </div>
 		</footer>
