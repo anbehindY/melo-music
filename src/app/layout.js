@@ -20,8 +20,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang='en'>
-			<body className={`${instrument_sans.variable}`}>
+		<html lang='en' className='scroll-smooth'>
+			<body className={`${instrument_sans.variable} ${faustina.variable}`}>
 				<div className='bg-right-upper-gradient bg-no-repeat bg-right-top'>
 					<div className='bg-left-upper-gradient bg-no-repeat bg-[0_300px]'>
 						<div className='bg-right-lower-gradient bg-no-repeat bg-[100%_92%]'>

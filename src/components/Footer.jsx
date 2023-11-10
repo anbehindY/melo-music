@@ -34,8 +34,8 @@ const Footer = () => {
 						/>
 						[A Division Of Music Industry Development Co.,Ltd]
 						<br />
-						No(737),Su Paung Yone Street,(37) Quarter, North Dagon
-						Township, Yangon, Myanmar.
+						No(737),Su Paung Yone Street,(37) Quarter, North Dagon Township,
+						Yangon, Myanmar.
 					</li>
 					<li className='flex gap-6 items-start leading-4'>
 						<Image
@@ -57,18 +57,49 @@ const Footer = () => {
 					</li>
 				</ul>
 			</div>
-      <div className='flex flex-col pt-8 pb-8 gap-6'>
-        <ul className='flex justify-center items-center gap-6 text-xl'>
-          <li><BsYoutube className='text-white'/></li>
-          <li><FaFacebookF className='text-white'/></li>
-          <li><BsInstagram className='text-white'/></li>
-          <li><BsTiktok className='text-white'/></li>
-        </ul>
-        <div className='flex gap-6 items-center justify-center'>
-          <Image src={'/Logo.svg'} alt='logo' width={93} height={35} />
-         <p className='leading-[22px]'> @2023<span className='gradient'> MID</span>. All rights served.</p>
-        </div>
-      </div>
+			<div className='flex flex-col pt-8 pb-8 gap-6'>
+				<ul className='flex justify-center items-center gap-6 text-xl text-white'>
+					<li>
+						<a
+							href='https://www.youtube.com/channel/UCA6HtFCBaw0Enx_O0rH6zQA'
+							target='_blank'
+						>
+							<BsYoutube className='hover:text-[#FF5276]' />
+						</a>
+					</li>
+					<li>
+						<a
+							href='https://www.facebook.com/melomusicmm/'
+							target='_blank'
+						>
+							<FaFacebookF className='hover:text-[#FF5276]' />
+						</a>
+					</li>
+					<li>
+						<a
+							href='https://www.instagram.com/melomusicmm/'
+							target='_blank'
+						>
+							<BsInstagram className='hover:text-[#FF5276]' />
+						</a>
+					</li>
+					<li>
+						<a
+							href='https://www.tiktok.com/@melomusicmm'
+							target='_blank'
+						>
+							<BsTiktok className='hover:text-[#FF5276]' />
+						</a>
+					</li>
+				</ul>
+				<div className='flex gap-6 items-center justify-center'>
+					<Image src={'/Logo.svg'} alt='logo' width={93} height={35} />
+					<p className='leading-[22px]'>
+						{' '}
+						@2023<span className='gradient'> MID</span>. All rights served.
+					</p>
+				</div>
+			</div>
 		</footer>
 	);
 };

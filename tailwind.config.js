@@ -20,10 +20,6 @@ module.exports = {
 				'eternal-gosh': 'url(/eternalgosh.svg)',
 				'r-zarni': 'url(/RZarni.svg)',
 			},
-			backgroundPosition: {
-				right: 'right 75%',
-				top: 'bottom center%',
-			},
 			boxShadow: {
 				'listen-btn': '0 1px 38px 0 rgba(190, 12, 12, 0.82)',
 				'down-arrow': '0 0 34px 0 rgba(255, 33, 80, 0.7)',
