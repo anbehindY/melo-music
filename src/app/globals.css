@@ -57,6 +57,30 @@ h2 {
 	);
 }
 
+.nav-line::before,
+.nav-line::after {
+	content: '';
+	display: block;
+	width: 23px;
+	height: 2.5px;
+	background: white;
+	border-radius: 8px;
+	margin-bottom: 1px;
+	transition: 0.4s;
+}
+
+.barActive {
+	opacity: 0;
+}
+
+.nav-line.active::before {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.nav-line.active::after {
+	transform: rotate(45deg) translate(-4px, -5px);
+}
+
 @layer components {
 	.gradient {
 		@apply bg-clip-text text-transparent font-bold bg-gradient-to-r from-[#F857A6] from-20% via-pink-500 via-30% to-[#FF5858] to-100%;
