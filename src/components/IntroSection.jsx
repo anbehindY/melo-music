@@ -1,8 +1,13 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { HiArrowDown } from 'react-icons/hi';
+import { BsArrowRight } from 'react-icons/bs';
 
 const IntroSection = () => {
+	const [hover, setHover] = React.useState(false);
+
 	return (
 		<section className='flex h-[800px] flex-col items-center px-6 py-12'>
 			<div>
@@ -18,10 +23,15 @@ const IntroSection = () => {
 						from classic traditional songs to epic trending music genres.
 					</p>
 					<button
-						className='bg-[#FF2150] shadow-listen-btn mt-4 w-[192] h-[59px] text-white font-semibold
-          text-[18px] leading-6 px-10 py-3 rounded-[30px] hover:bg-transparent hover:shadow-none hover:border-2 hover:border-[#FF5276] hover:text-[#FF5276]'
+						className='bg-[#FF2150] shadow-listen-btn mt-4 w-[192px] h-[59px] text-white font-semibold
+          text-[18px] leading-6 duration-[0.5s] rounded-[30px] hover:bg-transparent hover:shadow-none hover:border-2 hover:border-[#FF5276] hover:text-[#FF5276]'
+						onMouseEnter={() => setHover(true)}
+						onMouseLeave={() => setHover(false)}
 					>
 						Listen Now
+						{hover && (
+							<BsArrowRight className='inline-block ml-2 text-[#FF5276]' />
+						)}
 					</button>
 					<div className='flex flex-col items-center mt-8'>
 						<a

@@ -1,12 +1,20 @@
+'use client';
+
 import React from 'react';
 import PremiumFeatures from './PremiumFeatures';
 import Image from 'next/image';
 import Payment from './Payment';
 import { PAYMENT_INFO } from '@/utils/data';
+import { BsArrowRight } from 'react-icons/bs';
 
 const PremiumSection = () => {
+	const [hover, setHover] = React.useState(false);
+
 	return (
-		<section className='flex flex-col items-center justify-center w-full' id='premiumSection'>
+		<section
+			className='flex flex-col items-center justify-center w-full'
+			id='premiumSection'
+		>
 			<h2 className='text-[36px] font-semibold text-center leading-[42px] gradient w-[300px] mx-auto my-6'>
 				<span className='text-white'>Join</span> Melo&apos;s Premium
 			</h2>
@@ -32,11 +40,16 @@ const PremiumSection = () => {
 					})}
 				</div>
 				<div className='border-b-[1px] border-[#5B5858] pb-10 w-[90%] flex justify-center'>
-					<button
-						className='bg-[#FF2150] shadow-listen-btn w-[192] h-[59px] text-white font-semibold
-          text-[18px] leading-6 px-10 py-3 rounded-[30px] hover:bg-transparent hover:shadow-none hover:border-2 hover:border-[#FF5276] hover:text-[#FF5276]'
+				<button
+						className='bg-[#FF2150] shadow-listen-btn mt-4 w-[192px] h-[59px] text-white font-semibold
+          text-[18px] leading-6 duration-[0.5s] rounded-[30px] hover:bg-transparent hover:shadow-none hover:border-2 hover:border-[#FF5276] hover:text-[#FF5276]'
+						onMouseEnter={() => setHover(true)}
+						onMouseLeave={() => setHover(false)}
 					>
 						Buy Now
+						{hover && (
+							<BsArrowRight className='inline-block ml-2 text-[#FF5276]' />
+						)}
 					</button>
 				</div>
 			</div>
