@@ -11,27 +11,35 @@ const Payment = (
 	}
 ) => {
 	return (
-		<div className='w-[262px] h-[281px] border-gradient flex flex-col gap-4 px-6 py-8'>
+		<div className='w-[262px] border-gradient flex flex-col gap-[10px] px-6 py-8'>
 			<div className='flex justify-between'>
 				<h4 className='font-[700] text-xl'>{paymentInfo.type}</h4>
 				<p>
-					<span className='gradient font-[700] text-[20px]'>{paymentInfo.price} </span>Ks
+					<span className='gradient font-[700] text-[20px]'>
+						{paymentInfo.price}{' '}
+					</span>
+					Ks
 				</p>
 			</div>
 			<p className='font-[700] text-[15px] gradient'>
 				{paymentInfo.description}
 			</p>
 			<p className='font-[400] text-sm'>Available Payments:</p>
-			<div className='flex gap-6'>
+			<div className='flex gap-[4px]'>
 				{paymentInfo.source.map((source) => {
 					return (
-						<Image
-							src={`/${source}.svg`}
+						<div
 							key={source}
-							width={source === 'mptLogo' ? 50 : 40}
-							height={source === 'mptLogo' ? 50 : 40}
-							alt={source}
-						/>
+							className='flex justify-center items-center duration-100 w-[60px] h-[60px] 
+							ease-in-out p-2 rounded-md hover:border-[3px] hover:border-[#FF215076]'
+						>
+							<Image
+								src={`/${source}.svg`}
+								width={35}
+								height={35}
+								alt={source}
+							/>
+						</div>
 					);
 				})}
 			</div>
