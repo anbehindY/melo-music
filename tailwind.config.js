@@ -24,6 +24,7 @@ module.exports = {
 				'listen-btn': '0 0 38px 2px rgba(190, 12, 12, 0.82)',
 				'down-arrow': '0 0 34px 0 rgba(255, 33, 80, 0.7)',
 				'artist-img': '0 0.2px 7px 0 rgba(238, 64, 64, 0.66)',
+				'right-arrow': '0 5px 16px 0 #080F340F',
 			},
 			listStyleImage: {
 				'tick': 'url(/tickSquare.svg)',

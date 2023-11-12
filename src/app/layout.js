@@ -1,5 +1,7 @@
 import './globals.css';
 import { Faustina, Instrument_Sans } from 'next/font/google';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 export const faustina = Faustina({
 	subsets: ['latin'],
@@ -23,10 +25,12 @@ export default function RootLayout({ children }) {
 		<html lang='en' className='scroll-smooth'>
 			<body className={`${instrument_sans.variable} ${faustina.variable}`}>
 				<div className='bg-right-upper-gradient bg-no-repeat bg-right-top'>
-					<div className='bg-left-upper-gradient bg-no-repeat bg-[0_300px]'>
-						<div className='bg-right-lower-gradient bg-no-repeat bg-[100%_92%]'>
-							<div className='bg-left-lower-gradient bg-no-repeat bg-[0_65%]'>
+					<div className='bg-left-upper-gradient bg-no-repeat bg-[0_6%]'>
+						<div className='bg-left-lower-gradient bg-no-repeat bg-[0_65%]'>
+							<div className='bg-right-lower-gradient bg-no-repeat bg-[100%_92%]'>
+								<Navigation />
 								{children}
+								<Footer />
 							</div>
 						</div>
 					</div>

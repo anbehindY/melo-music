@@ -68,26 +68,17 @@ const Footer = () => {
 						</a>
 					</li>
 					<li>
-						<a
-							href='https://www.facebook.com/melomusicmm/'
-							target='_blank'
-						>
+						<a href='https://www.facebook.com/melomusicmm/' target='_blank'>
 							<FaFacebookF className='hover:text-[#FF5276]' />
 						</a>
 					</li>
 					<li>
-						<a
-							href='https://www.instagram.com/melomusicmm/'
-							target='_blank'
-						>
+						<a href='https://www.instagram.com/melomusicmm/' target='_blank'>
 							<BsInstagram className='hover:text-[#FF5276]' />
 						</a>
 					</li>
 					<li>
-						<a
-							href='https://www.tiktok.com/@melomusicmm'
-							target='_blank'
-						>
+						<a href='https://www.tiktok.com/@melomusicmm' target='_blank'>
 							<BsTiktok className='hover:text-[#FF5276]' />
 						</a>
 					</li>

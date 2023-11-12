@@ -1,13 +1,13 @@
-import MainSection from '../components/MainSection';
-import Navigation from '../components/Navigation';
-import Footer from '@/components/Footer';
+import IntroSection from '@/components/IntroSection';
+import AboutSection from '@/components/about/AboutSection';
+import PremiumSection from '@/components/premium/PremiumSection';
 
 export default function Home() {
 	return (
-		<>
-			<Navigation />
-			<MainSection />
-			<Footer />
-		</>
+		<main className='flex flex-col items-center gap-4'>
+			<IntroSection />
+			<AboutSection />
+			<PremiumSection />
+		</main>
 	);
 }

@@ -81,8 +81,17 @@ h2 {
 	transform: rotate(45deg) translate(-4px, -5px);
 }
 
+.ReactCollapse--collapse {
+  transition: height 300ms;
+}
+
 @layer components {
 	.gradient {
 		@apply bg-clip-text text-transparent font-bold bg-gradient-to-r from-[#F857A6] from-20% via-pink-500 via-30% to-[#FF5858] to-100%;
 	}
+
+	.bg-gradient {
+		@apply bg-gradient-to-r from-[#F857A6] from-0% to-[#FF5858] to-100%
+	}
 }
+
