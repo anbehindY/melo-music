@@ -81,7 +81,7 @@ const AboutSection = () => {
 					/>
 				</div>
 			</div>
-			<div className='flex flex-col gap-6 items-center lg:flex-row lg:w-full lg:justify-center lg:gap-32 lg:mb-40'>
+			<div className='flex flex-col gap-6 items-center lg:flex-row lg:w-full lg:justify-center lg:gap-32 mb-16 lg:mb-40'>
 				<div>
 					<h2 className='text-[36px] font-semibold text-center leading-[42px] !w-[250px] mx-auto mb-6 lg:text-left lg:text-[72px] lg:leading-[129px] lg:!w-full'>
 						Discover <span className='gradient'>New Music</span>

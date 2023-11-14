@@ -26,26 +26,51 @@ const PremiumSection = () => {
 				<div className='flex flex-col items-center justify-center gap-8 pb-4 lg:flex-row'>
 					<div className='flex justify-center items-center gap-4'>
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
-							<Image src='/kbzPay.svg' width={60} height={60} alt='kbzPay' />
+							<div className='relative w-[60px] h-[60px]'>
+								<Image
+									src='/kbzPay.svg'
+									fill
+									style={{ objectFit: 'contain' }}
+									alt='kbzPay'
+								/>
+							</div>
 						</div>
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
-							<Image src='/mptLogo.svg' width={65} height={65} alt='mptLogo' />
+							<div className='relative w-[60px] h-[60px]'>
+								<Image
+									src='/mptLogo.svg'
+									fill
+									style={{ objectFit: 'contain' }}
+									alt='mptLogo'
+								/>
+							</div>
 						</div>
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
-							<Image src='/dollar.svg' width={50} height={50} alt='dollar' />
+							<div className='relative w-[50px] h-[50px]'>
+								<Image
+									src='/dollar.svg'
+									fill
+									style={{ objectFit: 'contain' }}
+									alt='dollar'
+								/>
+							</div>
 						</div>
 					</div>
 					<div className='flex justify-center items-center gap-4'>
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
-							<Image
-								src='/applePay.svg'
-								width={65}
-								height={65}
-								alt='applePay'
-							/>
+							<div className='relative w-[60px] h-[60px]'>
+								<Image
+									src='/applePay.svg'
+									fill
+									style={{ objectFit: 'contain' }}
+									alt='applePay'
+								/>
+							</div>
 						</div>
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
-							<Image src='/cbPay.svg' width={60} height={60} alt='cbPay' />
+							<div className='relative w-[60px] h-[60px]'>
+								<Image src='/cbPay.svg' width={60} height={60} alt='cbPay' />
+							</div>
 						</div>
 					</div>
 				</div>

@@ -47,15 +47,15 @@ const IntroSection = () => {
 						display: 'block',
 						width: '195px',
 						height: '40px',
-						position: 'relative',
 					}}
 					target='_blank'
 				>
 					<Image
 						src='https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/en-us.svg'
-						fill
+						width={195}
+						height={59}
 						alt='Download on the App Store'
-						style={{ width: '195px', height: '59px', objectFit: 'contain' }}
+						style={{ width: '195px', height: '59px' }}
 					/>
 				</a>
 				<a
@@ -64,15 +64,15 @@ const IntroSection = () => {
 						display: 'block',
 						width: '200px',
 						height: '63px',
-						position: 'relative',
 					}}
 					target='_blank'
 				>
 					<Image
 						src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-						fill
 						alt='Get it on Google Play'
-						style={{ width: '200px', height: '85px', objectFit: 'contain' }}
+						width={200}
+						height={85}
+						style={{ width: '200px', height: '85px' }}
 					/>
 				</a>
 			</div>

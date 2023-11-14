@@ -26,33 +26,39 @@ const Footer = () => {
 				</ul>
 				<ul className='text-left text-sm leading-4 flex flex-col gap-8 items-start w-[95%] lg:w-[380px] '>
 					<li className='flex gap-6 items-start leading-4'>
-						<Image
-							src={'/location.svg'}
-							width={20}
-							height={25}
-							alt='Location icon'
-						/>
+						<div className='relative w-5 h-6'>
+							<Image
+								src={'/location.svg'}
+								fill
+								style={{ objectFit: 'contain' }}
+								alt='Location icon'
+							/>
+						</div>
 						[A Division Of Music Industry Development Co.,Ltd]
 						<br />
 						No(737),Su Paung Yone Street,(37) Quarter, North Dagon Township,
 						Yangon, Myanmar.
 					</li>
 					<li className='flex gap-6 items-start leading-4'>
-						<Image
-							src={'/phone.svg'}
-							width={20}
-							height={25}
-							alt='Location icon'
-						/>
+						<div className='relative w-5 h-6'>
+							<Image
+								src={'/phone.svg'}
+								fill
+								style={{ objectFit: 'contain' }}
+								alt='Location icon'
+							/>
+						</div>
 						09-262277337, 09-262277447
 					</li>
 					<li className='flex gap-6 items-start leading-4'>
-						<Image
-							src={'/mail.svg'}
-							width={20}
-							height={25}
-							alt='Location icon'
-						/>
+						<div className='relative w-5 h-6'>
+							<Image
+								src={'/mail.svg'}
+								fill
+								style={{ objectFit: 'contain' }}
+								alt='Location icon'
+							/>
+						</div>
 						support@melomm.com
 					</li>
 				</ul>
