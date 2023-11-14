@@ -1,19 +1,26 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { ARTISTS } from '@/utils/data';
 import Artist from './Artist';
+import ReactPlayer from 'react-player';
 
 const AboutSection = () => {
 	return (
 		<section className='flex flex-col items-center gap-20'>
-			<div className='flex flex-col gap-6 items-center'>
+			<div className='flex flex-col gap-6 items-center w-4/5'>
 				<h2 className='text-[36px] font-semibold'>
 					Take a look at <span className='gradient'>Melo</span>
 				</h2>
-				<video controls width='250' className='rounded-sm w-full'>
-					<source src='/path/to/video.mp4' type='video/mp4' />
-					Your browser does not support the video tag.
-				</video>
+				<ReactPlayer
+				url={'https://youtu.be/OQz7ZrfFxTc?si=la4fZ9utoKLFzZQ-'}
+				height={'100%'}
+				width={'100%'}
+				controls
+				/>
+
+				{/* </ReactPlayer> */}
 			</div>
 			<div className='flex flex-col gap-6 items-center'>
 				<h2 className='text-[36px] font-semibold'>
