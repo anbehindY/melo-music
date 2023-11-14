@@ -12,7 +12,12 @@ const IntroSection = () => {
 		<section className='flex flex-col items-center lg:items-start px-6 py-12 lg:gap-6 lg:justify-center lg:pt-10'>
 			<div className='flex flex-col items-center lg:flex-row-reverse'>
 				<div className='relative w-[200px] h-[200px] lg:w-[250px] lg:h-[250px]'>
-					<Image src='/meloIcon.svg' fill style={{objectFit: 'contain'}} alt='Melo icon' />
+					<Image
+						src='/meloIcon.svg'
+						fill
+						style={{ objectFit: 'contain' }}
+						alt='Melo icon'
+					/>
 				</div>
 				<div className='flex flex-col items-center gap-[12px] w-full lg:items-start lg:gap-0'>
 					<h1 className='text-[39px] gradient lg:text-[96px] lg:leading-[93px] lg:w-[510px] lg:mb-6'>
@@ -42,15 +47,15 @@ const IntroSection = () => {
 						display: 'block',
 						width: '195px',
 						height: '40px',
+						position: 'relative',
 					}}
 					target='_blank'
 				>
 					<Image
 						src='https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/en-us.svg'
-						width={1}
-						height={1}
+						fill
 						alt='Download on the App Store'
-						style={{ width: '195px', height: '59px' }}
+						style={{ width: '195px', height: '59px', objectFit: 'contain' }}
 					/>
 				</a>
 				<a
@@ -59,15 +64,15 @@ const IntroSection = () => {
 						display: 'block',
 						width: '200px',
 						height: '63px',
+						position: 'relative',
 					}}
 					target='_blank'
 				>
 					<Image
 						src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-						width={200}
-						height={90}
+						fill
 						alt='Get it on Google Play'
-						style={{ width: '200px', height: '85px' }}
+						style={{ width: '200px', height: '85px', objectFit: 'contain' }}
 					/>
 				</a>
 			</div>
