@@ -21,7 +21,7 @@ const Payment = (
 					Ks
 				</p>
 			</div>
-			<p className='font-[700] text-[15px] gradient'>
+			<p className='font-[700] text-[15px] gradient lg:h-[70px]'>
 				{paymentInfo.description}
 			</p>
 			<p className='font-[400] text-sm'>Available Payments:</p>
