@@ -20,7 +20,7 @@ const PremiumSection = () => {
 			</h2>
 			<PremiumFeatures />
 			<div className='flex flex-col items-center gap-10 w-full'>
-				<h4 className='w-[250px] text-center text-[24px] font-[700] lg:w-full lg:text-[40px] lg:leading-[56px] lg:mt-6'>
+				<h4 className='w-[250px] text-center text-[24px] font-[700] lg:w-full lg:text-[40px] lg:leading-[56px] lg:mt-2'>
 					Available Payments for Premium
 				</h4>
 				<div className='flex flex-col items-center justify-center gap-8 pb-4 lg:flex-row'>
