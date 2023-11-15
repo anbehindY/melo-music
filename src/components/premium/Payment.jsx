@@ -37,6 +37,7 @@ const Payment = (
 								<Image
 									src={`/${source}.svg`}
 									fill
+									quality={100}
 									style={{ objectFit: 'contain' }}
 									alt={source}
 								/>
