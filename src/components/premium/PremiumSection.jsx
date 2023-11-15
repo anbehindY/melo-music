@@ -29,6 +29,7 @@ const PremiumSection = () => {
 							<div className='relative w-[60px] h-[60px]'>
 								<Image
 									src='/kbzPay.svg'
+									quality={100}
 									fill
 									style={{ objectFit: 'contain' }}
 									alt='kbzPay'
@@ -39,6 +40,7 @@ const PremiumSection = () => {
 							<div className='relative w-[60px] h-[60px]'>
 								<Image
 									src='/mptLogo.svg'
+									quality={100}
 									fill
 									style={{ objectFit: 'contain' }}
 									alt='mptLogo'
@@ -50,6 +52,7 @@ const PremiumSection = () => {
 								<Image
 									src='/dollar.svg'
 									fill
+									quality={100}
 									style={{ objectFit: 'contain' }}
 									alt='dollar'
 								/>
@@ -62,6 +65,7 @@ const PremiumSection = () => {
 								<Image
 									src='/applePay.svg'
 									fill
+									quality={100}
 									style={{ objectFit: 'contain' }}
 									alt='applePay'
 								/>
@@ -69,7 +73,14 @@ const PremiumSection = () => {
 						</div>
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
 							<div className='relative w-[60px] h-[60px]'>
-								<Image src='/cbPay.svg' width={60} height={60} alt='cbPay' />
+								<Image
+									src='/cbPay.svg'
+									width={60}
+									height={60}
+									alt='cbPay'
+									quality={100}
+									style={{ objectFit: 'contain' }}
+								/>
 							</div>
 						</div>
 					</div>

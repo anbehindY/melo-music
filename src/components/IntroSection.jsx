@@ -15,6 +15,8 @@ const IntroSection = () => {
 					<Image
 						src='/meloIcon.svg'
 						fill
+						quality={100}
+						priority
 						style={{ objectFit: 'contain' }}
 						alt='Melo icon'
 					/>
