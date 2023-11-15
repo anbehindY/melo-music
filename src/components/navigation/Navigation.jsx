@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import NavItems from './NavItems';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import { Collapse } from 'react-collapse';
 
@@ -12,23 +13,22 @@ const Navigation = () => {
 	const [dropDownActive, setDropDownActive] = useState(false);
 
 	return (
-		<nav className='flex items-center justify-between flex-wrap p-6 h-[99px] bg-[#0F0F0F66] z-0'>
-			<Image
-				src='/Logo.svg'
-				width={100}
-				height={100}
-				alt='Melo logo'
-				style={{ width: 'auto', height: 'auto', cursor: 'pointer' }}
-				onClick={() => router.push('/')}
-			/>
+		<nav className='flex items-center justify-between flex-wrap p-6 h-[99px] bg-[#0F0F0F66] z-0 lg:h-[125px] lg:px-16'>
+			<div className='relative w-[100px] h-[40px] lg:w-[200px] lg:h-[77px] cursor-pointer'>
+				<Image
+					src='/Logo.svg'
+					fill
+					alt='Melo logo'
+					style={{ objectFit: 'contain' }}
+					onClick={() => router.push('/')}
+				/>
+			</div>
 			<button
-				className={`w-[36px] h-[36px] z-[9] bg-[#FF2150] rounded-lg flex flex-col gap-1 justify-center items-center duration-[0.4s] nav-line ${
-					navActive ? 'active' : ''
-				}`}
+				className={`w-[36px] h-[36px] z-[9] bg-[#FF2150] rounded-lg flex flex-col gap-1 justify-center items-center duration-[0.4s] nav-line lg:hidden 
+				${navActive ? 'active' : ''}`}
 				type='button'
 				onClick={() => {
 					setNavActive(!navActive);
-					console.log('clicked', navActive);
 				}}
 			>
 				<div
@@ -97,6 +97,7 @@ const Navigation = () => {
 					</li>
 				</ul>
 			</div>
+			<NavItems />
 		</nav>
 	);
 };

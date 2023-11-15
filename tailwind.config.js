@@ -15,6 +15,10 @@ module.exports = {
 				'left-upper-gradient': 'url(/background/leftUpperGradient.png)',
 				'right-lower-gradient': 'url(/background/rightLowerGradient.png)',
 				'left-lower-gradient': 'url(/background/leftLowerGradient.png)',
+				'right-upper-lg': 'url(/background/top-rt-bg.png)',
+				'left-upper-lg': 'url(/background/top-lt-bg.png)',
+				'right-lower-lg': 'url(/background/bot-rt-bg.png)',
+				'left-lower-lg': 'url(/background/bot-lt-bg.png)',
 				'lay-phyu': 'url(/layphyu.svg)',
 				'big-bag': 'url(/bigbag.svg)',
 				'eternal-gosh': 'url(/eternalgosh.svg)',
@@ -24,6 +28,7 @@ module.exports = {
 				'listen-btn': '0 0 38px 2px rgba(190, 12, 12, 0.82)',
 				'down-arrow': '0 0 34px 0 rgba(255, 33, 80, 0.7)',
 				'artist-img': '0 0.2px 7px 0 rgba(238, 64, 64, 0.66)',
+				'artist-shadow': '0 1px 20px 1px rgba(238, 64, 64, 0.66)',
 				'right-arrow': '0 5px 16px 0 #080F340F',
 			},
 			listStyleImage: {

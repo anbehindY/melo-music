@@ -21,7 +21,7 @@ const Payment = (
 					Ks
 				</p>
 			</div>
-			<p className='font-[700] text-[15px] gradient'>
+			<p className='font-[700] text-[15px] gradient lg:h-[70px]'>
 				{paymentInfo.description}
 			</p>
 			<p className='font-[400] text-sm'>Available Payments:</p>
@@ -31,14 +31,16 @@ const Payment = (
 						<div
 							key={source}
 							className='flex justify-center items-center duration-100 w-[60px] h-[60px] 
-							ease-in-out p-2 rounded-md hover:border-[3px] hover:border-[#FF215076]'
+							ease-in-out p-2 rounded-md hover:border-[3px] hover:border-[#FF215076] relative'
 						>
-							<Image
-								src={`/${source}.svg`}
-								width={35}
-								height={35}
-								alt={source}
-							/>
+							<div className='relative w-[35px] h-[35px]'>
+								<Image
+									src={`/${source}.svg`}
+									fill
+									style={{ objectFit: 'contain' }}
+									alt={source}
+								/>
+							</div>
 						</div>
 					);
 				})}
