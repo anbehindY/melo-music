@@ -11,6 +11,7 @@ const nextConfig = {
         hostname: 'tools.applemediaservices.com',
       },
     ],
+    unoptimized: true,
   },
 }
 
