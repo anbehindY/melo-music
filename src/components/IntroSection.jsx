@@ -13,7 +13,7 @@ const IntroSection = () => {
 			<div className='flex flex-col items-center lg:flex-row-reverse'>
 				<div className='relative w-[200px] h-[200px] lg:w-[250px] lg:h-[250px]'>
 					<Image
-						src='/meloIcon.svg'
+						src='/meloIcon.png'
 						fill
 						quality={100}
 						priority

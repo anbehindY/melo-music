@@ -28,7 +28,7 @@ const PremiumSection = () => {
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
 							<div className='relative w-[60px] h-[60px]'>
 								<Image
-									src='/kbzPay.svg'
+									src='/kbzPay.png'
 									quality={100}
 									fill
 									style={{ objectFit: 'contain' }}
@@ -40,7 +40,7 @@ const PremiumSection = () => {
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
 							<div className='relative w-[60px] h-[60px]'>
 								<Image
-									src='/mptLogo.svg'
+									src='/mptLogo.png'
 									quality={100}
 									fill
 									style={{ objectFit: 'contain' }}
@@ -51,7 +51,7 @@ const PremiumSection = () => {
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
 							<div className='relative w-[50px] h-[50px]'>
 								<Image
-									src='/dollar.svg'
+									src='/dollar.png'
 									fill
 									quality={100}
 									style={{ objectFit: 'contain' }}
@@ -65,7 +65,7 @@ const PremiumSection = () => {
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
 							<div className='relative w-[60px] h-[60px]'>
 								<Image
-									src='/applePay.svg'
+									src='/applePay.png'
 									fill
 									quality={100}
 									style={{ objectFit: 'contain' }}
@@ -77,7 +77,7 @@ const PremiumSection = () => {
 						<div className='flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]'>
 							<div className='relative w-[60px] h-[60px]'>
 								<Image
-									src='/cbPay.svg'
+									src='/cbPay.png'
 									width={60}
 									height={60}
 									alt='cbPay'

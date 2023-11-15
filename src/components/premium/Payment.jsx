@@ -35,7 +35,7 @@ const Payment = (
 						>
 							<div className='relative w-[35px] h-[35px]'>
 								<Image
-									src={`/${source}.svg`}
+									src={`/${source}.png`}
 									fill
 									quality={100}
 									style={{ objectFit: 'contain' }}
