@@ -28,8 +28,10 @@ const AccordiumItem = ({ question, answer }) => {
 				</div>
 			</div>
 			<div
-				className={`overflow-hidden duration-500 ${
-					dropDownStatus ? 'max-h-[400px]' : 'max-h-0'
+				className={`overflow-hidden !duration-500 ${
+					dropDownStatus
+						? 'max-h-[400px] transition-opacity delay-100'
+						: 'max-h-0 opacity-0'
 				}`}
 			>
 				<p className='w-full text-[18px] font-[400] leading-[30px] mt-4'>
