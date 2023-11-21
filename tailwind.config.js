@@ -23,6 +23,7 @@ module.exports = {
 				'big-bag': 'url(/bigbag.svg)',
 				'eternal-gosh': 'url(/eternalgosh.svg)',
 				'r-zarni': 'url(/RZarni.svg)',
+				'glassy-bg': 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))',
 			},
 			boxShadow: {
 				'listen-btn': '0 0 38px 2px rgba(190, 12, 12, 0.82)',
@@ -38,6 +39,9 @@ module.exports = {
 			listStylePosition: {
 				inside: 'inside',
 			},
+			backdropFilter: {
+        'blur': 'blur(10px)',
+      },
 		},
 	},
 	variants: {
