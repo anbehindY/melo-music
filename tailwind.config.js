@@ -39,9 +39,6 @@ module.exports = {
 			listStylePosition: {
 				inside: 'inside',
 			},
-			backdropFilter: {
-        'blur': 'blur(10px)',
-      },
 		},
 	},
 	variants: {
