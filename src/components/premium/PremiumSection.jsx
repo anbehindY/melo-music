@@ -33,7 +33,6 @@ const PremiumSection = () => {
 									fill
 									style={{ objectFit: 'contain' }}
 									alt='kbzPay'
-									unoptimized
 								/>
 							</div>
 						</div>
@@ -56,7 +55,6 @@ const PremiumSection = () => {
 									quality={100}
 									style={{ objectFit: 'contain' }}
 									alt='dollar'
-									unoptimized
 								/>
 							</div>
 						</div>
@@ -70,7 +68,6 @@ const PremiumSection = () => {
 									quality={100}
 									style={{ objectFit: 'contain' }}
 									alt='applePay'
-									unoptimized
 								/>
 							</div>
 						</div>
@@ -83,7 +80,6 @@ const PremiumSection = () => {
 									alt='cbPay'
 									quality={100}
 									style={{ objectFit: 'contain' }}
-									unoptimized
 								/>
 							</div>
 						</div>

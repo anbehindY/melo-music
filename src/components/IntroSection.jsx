@@ -19,7 +19,6 @@ const IntroSection = () => {
 						priority
 						style={{ objectFit: 'contain' }}
 						alt='Melo icon'
-						unoptimized
 					/>
 				</div>
 				<div className='flex flex-col items-center gap-[12px] w-full lg:items-start lg:gap-0'>
