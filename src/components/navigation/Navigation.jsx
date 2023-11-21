@@ -10,7 +10,7 @@ const Navigation = () => {
 	const [navActive, setNavActive] = useState(false);
 
 	return (
-		<nav className='flex items-center justify-between flex-wrap px-6 h-[99px] bg-glassy-bg backdrop-blur-md overflow-hidden shadow-lg sticky top-0 w-full z-50 lg:h-[125px] lg:px-16'>
+		<nav className='flex items-center justify-between flex-wrap px-6 h-[99px] bg-[#0F0F0F66] sticky top-0 w-full z-50 lg:h-[125px] lg:px-16'>
 			<div className='relative w-[100px] h-[40px] lg:w-[200px] lg:h-[77px] cursor-pointer'>
 				<Image
 					src='/Logo.svg'
