@@ -9,9 +9,8 @@ const AccordiumItem = ({ question, answer }) => {
 
 	return (
 		<div
-			className={`lg:w-4/5 w-[95%] items-start mx-auto bg-white flex flex-col justify-between lg:px-10 lg:py-10 px-6 py-6 font-[500] lg:text-[22px] text-lg rounded-xl ${
-				dropDownStatus && 'border-[#FF2150] border-2'
-			}`}
+			className={`lg:w-4/5 w-[95%] box-border border-2 border-transparent items-start mx-auto bg-white flex flex-col justify-between lg:px-10 lg:py-10 px-6 py-6 font-[500] lg:text-[22px] text-lg rounded-xl
+			${dropDownStatus && '!border-[#FF2150]'}`}
 		>
 			<div className='flex justify-between w-full items-center'>
 				<p className='w-4/5'>{question}</p>
@@ -28,11 +27,17 @@ const AccordiumItem = ({ question, answer }) => {
 					)}
 				</div>
 			</div>
-			<Collapse isOpened={dropDownStatus}>
+			<div
+				className={`overflow-hidden !duration-500 ${
+					dropDownStatus
+						? 'max-h-[400px] transition-opacity delay-100'
+						: 'max-h-0 opacity-0'
+				}`}
+			>
 				<p className='w-full text-[18px] font-[400] leading-[30px] mt-4'>
 					{answer}
 				</p>
-			</Collapse>
+			</div>
 		</div>
 	);
 };

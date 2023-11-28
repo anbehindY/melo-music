@@ -2,11 +2,8 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
-import { Collapse } from 'react-collapse';
 
 const NavItems = () => {
-	const [dropDownActive, setDropDownActive] = useState(false);
 	const router = useRouter();
 
 	return (
@@ -23,11 +20,11 @@ const NavItems = () => {
 				onClick={() => {
 					router.push('/support');
 				}}
-				className='hover:text-[#FF2150] font-semibold cursor-pointer border-b-2 pb-8 lg:border-b-0 lg:pb-0 lg:border-r-2 lg:pr-8'
+				className='hover:text-[#FF2150] font-semibold cursor-pointer pb-8 lg:pb-0 lg:border-l-2 lg:pl-8'
 			>
 				Support
 			</li>
-			<li
+			{/* <li
 				className='font-semibold cursor-pointer border-2 rounded-full px-6 py-2 text-[#FF2150] border-[#FF2150]
 						 hover:bg-[#FF2150] hover:text-white hover:shadow-listen-btn'
 				onClick={() => {
@@ -61,7 +58,7 @@ const NavItems = () => {
 						</ul>
 					</Collapse>
 				</div>
-			</li>
+			</li> */}
 		</ul>
 	);
 };

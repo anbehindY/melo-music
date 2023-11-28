@@ -47,7 +47,7 @@ const Payment = (
 				})}
 			</div>
 			{paymentInfo.source.includes('mptLogo') && (
-				<span className='font-[400] text-[10px] ml-14'>(Auto Renewal)</span>
+				<span className='font-[400] text-[10px] ml-[60px]'>(Auto Renewal)</span>
 			)}
 		</div>
 	);

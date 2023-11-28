@@ -6,7 +6,7 @@ module.exports = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
-		extend: {        
+		extend: {
 			backgroundClip: {
 				text: 'text',
 			},
@@ -32,8 +32,8 @@ module.exports = {
 				'right-arrow': '0 5px 16px 0 #080F340F',
 			},
 			listStyleImage: {
-				'tick': 'url(/tickSquare.svg)',
-				'cross': 'url(/crossSquare.svg)',
+				tick: 'url(/tickSquare.svg)',
+				cross: 'url(/crossSquare.svg)',
 			},
 			listStylePosition: {
 				inside: 'inside',
@@ -46,26 +46,26 @@ module.exports = {
 		},
 	},
 	plugins: [
-		function({ addUtilities }) {
-      const newUtilities = {
-        '.list-style-tick': {
-          'background-image': "url('/tickSquare.svg')",
-          'background-repeat': 'no-repeat',
-          'background-position': 'left center',
-          'padding': '3px 0px 3px 10px',
-          'list-style': 'none',
-          'margin': '0',
-        },
+		function ({ addUtilities }) {
+			const newUtilities = {
+				'.list-style-tick': {
+					'background-image': "url('/tickSquare.svg')",
+					'background-repeat': 'no-repeat',
+					'background-position': 'left center',
+					padding: '3px 0px 3px 10px',
+					'list-style': 'none',
+					margin: '0',
+				},
 				'.list-style-cross': {
-          'background-image': "url('/crossSquare.svg')",
-          'background-repeat': 'no-repeat',
-          'background-position': 'left center',
-          'padding': '3px 0px 3px 10px',
-          'list-style': 'none',
-          'margin': '0',
-        },
-      }
-      addUtilities(newUtilities)
-    }
+					'background-image': "url('/crossSquare.svg')",
+					'background-repeat': 'no-repeat',
+					'background-position': 'left center',
+					padding: '3px 0px 3px 10px',
+					'list-style': 'none',
+					margin: '0',
+				},
+			};
+			addUtilities(newUtilities);
+		},
 	],
 };

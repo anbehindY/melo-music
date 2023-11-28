@@ -9,9 +9,9 @@ const IntroSection = () => {
 	const [hover, setHover] = React.useState(false);
 
 	return (
-		<section className='flex flex-col items-center lg:items-start px-6 py-12 lg:gap-6 lg:justify-center lg:pt-10'>
-			<div className='flex flex-col items-center lg:flex-row-reverse'>
-				<div className='relative w-[200px] h-[200px] lg:w-[250px] lg:h-[250px]'>
+		<section className='flex flex-col items-center lg:items-start px-6 py-12 lg:pt-6 lg:gap-6 lg:justify-center xl:pt-0 2xl:pt-12 2xl:pb-24'>
+			<div className='flex flex-col items-center lg:flex-row-reverse xl:pt-6'>
+				<div className='relative w-[200px] h-[200px] lg:w-[250px] lg:h-[250px] 2xl:w-[350px] 2xl:h-[350px]'>
 					<Image
 						src='/meloIcon.png'
 						fill
@@ -19,7 +19,6 @@ const IntroSection = () => {
 						priority
 						style={{ objectFit: 'contain' }}
 						alt='Melo icon'
-						unoptimized
 					/>
 				</div>
 				<div className='flex flex-col items-center gap-[12px] w-full lg:items-start lg:gap-0'>
@@ -79,7 +78,7 @@ const IntroSection = () => {
 					/>
 				</a>
 			</div>
-			<button className='flex justify-center mx-auto items-center w-[40px] h-[40px] lg:w-12 lg:h-12 lg:border-[3.5px] mt-12 rounded-full border-[3px] border-white hover:border-none hover:bg-gradient-to-r from-[#F857A6] via-pink-500 to-[#FF5858]'>
+			<button className='flex justify-center mx-auto 2xl:mt-16 items-center w-[40px] h-[40px] lg:w-12 lg:h-12 lg:border-[3.5px] mt-12 rounded-full border-[3px] border-white hover:border-none hover:bg-gradient-to-r from-[#F857A6] via-pink-500 to-[#FF5858]'>
 				<a href='#premiumSection'>
 					<HiArrowDown className='p-1 text-white text-center text-3xl lg:text-4xl rounded-full hover:shadow-down-arrow' />
 				</a>

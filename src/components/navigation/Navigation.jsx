@@ -4,16 +4,13 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import NavItems from './NavItems';
-import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
-import { Collapse } from 'react-collapse';
 
 const Navigation = () => {
 	const router = useRouter();
 	const [navActive, setNavActive] = useState(false);
-	const [dropDownActive, setDropDownActive] = useState(false);
 
 	return (
-		<nav className='flex items-center justify-between flex-wrap p-6 h-[99px] bg-[#0F0F0F66] z-0 lg:h-[125px] lg:px-16'>
+		<nav className='flex items-center justify-between flex-wrap px-6 h-[99px] bg-[#0F0F0F66] sticky top-0 w-full z-50 lg:h-[125px] lg:px-16'>
 			<div className='relative w-[100px] h-[40px] lg:w-[200px] lg:h-[77px] cursor-pointer'>
 				<Image
 					src='/Logo.svg'
@@ -56,11 +53,11 @@ const Navigation = () => {
 							setNavActive(false);
 							router.push('/support');
 						}}
-						className='hover:text-[#FF2150] text-xl font-semibold cursor-pointer border-b-2 pb-8'
+						className='hover:text-[#FF2150] text-xl font-semibold cursor-pointer border-t-2 pt-8'
 					>
 						Support
 					</li>
-					<li
+					{/* <li
 						className='text-xl font-semibold cursor-pointer border-2 rounded-full px-6 py-2 text-[#FF2150] border-[#FF2150]
 						 hover:bg-[#FF2150] hover:text-white hover:shadow-listen-btn'
 						onClick={() => {
@@ -94,7 +91,7 @@ const Navigation = () => {
 								</ul>
 							</Collapse>
 						</div>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 			<NavItems />
