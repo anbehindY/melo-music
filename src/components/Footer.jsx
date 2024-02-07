@@ -27,6 +27,9 @@ const Footer = () => {
           <li className="hover:text-[#FF5276]">
             <Link href="/privacy-policy">Privacy Policy</Link>
           </li>
+          <li className="hover:text-[#FF5276]">
+            <Link href="/terms-of-use">Terms of Use</Link>
+          </li>
         </ul>
         <ul className="text-left text-sm leading-4 flex flex-col gap-8 items-start w-[95%] lg:w-[380px] ">
           <li className="flex gap-6 items-start leading-4">
