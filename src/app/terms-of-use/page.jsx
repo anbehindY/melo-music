@@ -5,13 +5,13 @@ import { endpoints } from "@/utils/endpoints";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const TermsConditions = () => {
+const TermsOfUse = () => {
   const [content, setContent] = useState(null);
 
   const fetchData = async () => {
     try {
       const { data } = await axios.get(
-        `${process.env.API_URL}${endpoints.termsAndConditions.get}`,
+        `${process.env.API_URL}${endpoints.termsOfUse.get}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const TermsConditions = () => {
               className={`lg:w-4/5 w-[95%] box-border border-2 border-transparent items-start mx-auto bg-white flex flex-col justify-between lg:px-10 lg:py-10 px-6 py-6 font-[500] lg:text-[22px] text-lg rounded-xl
 			`}
             >
-              <h1 className="text-4xl font-bold">Terms and Conditions</h1>
+              <h1 className="text-4xl font-bold">Terms of Use</h1>
               <br />
               <div dangerouslySetInnerHTML={{ __html: content }} />
             </div>
@@ -58,4 +58,4 @@ const TermsConditions = () => {
   );
 };
 
-export default TermsConditions;
+export default TermsOfUse;
