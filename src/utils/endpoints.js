@@ -13,4 +13,7 @@ export const endpoints = Object.freeze({
   support: {
     get: `${prefix}/support-guide`,
   },
+  ogData: {
+    get: `${prefix}/deeplink-data`,
+  },
 });
