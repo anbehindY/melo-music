@@ -22,10 +22,10 @@ const IntroSection = () => {
           />
         </div>
         <div className="flex flex-col items-center gap-[12px] w-full lg:items-start lg:gap-0">
-          <h1 className="text-[39px] gradient lg:text-[96px] lg:leading-[93px] lg:w-[510px] lg:mb-6">
+          <h1 className="text-[39px] gradient md:text-[52px] md:leading-[60px] md:text-center lg:text-left lg:text-[96px] lg:leading-[93px] lg:w-[510px] lg:mb-6">
             Melo <span className="text-white font-semibold">to your</span> Heart
           </h1>
-          <p className="font-[16px] leading-6 tracking-widest lg:w-[600px] lg:mb-4">
+          <p className="font-[16px] leading-6 tracking-widest w-[320px] md:w-[420px] lg:w-[600px] lg:mb-4">
             With Melo Music, you can download and enjoy wide varieties of songs
             from classic traditional songs to epic trending music genres.
           </p>

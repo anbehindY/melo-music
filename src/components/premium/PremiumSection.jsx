@@ -12,7 +12,7 @@ const PremiumSection = () => {
       className="flex flex-col items-center justify-center w-full"
       id="premiumSection"
     >
-      <h2 className="text-[36px] font-semibold text-center leading-[42px] gradient w-[300px] mx-auto my-6 lg:w-full lg:text-[96px] lg:leading-[93px] lg:pb-8">
+      <h2 className="text-[36px] font-semibold text-center leading-[42px] md:!w-4/6 gradient w-[300px] mx-auto my-6 lg:w-full lg:text-[96px] lg:leading-[93px] md:pb-2 lg:pb-8">
         <span className="text-white">Join</span> Melo&apos;s Premium
       </h2>
       <PremiumFeatures />
@@ -20,7 +20,7 @@ const PremiumSection = () => {
         <h4 className="w-[250px] text-center text-[24px] font-[700] lg:w-full lg:text-[40px] lg:leading-[56px] lg:mt-2">
           Available Payments for Premium
         </h4>
-        <div className="flex flex-col items-center justify-center gap-8 pb-4 lg:flex-row">
+        <div className="flex flex-col items-center justify-center gap-8 pb-4 md:flex-row">
           <div className="flex justify-center items-center gap-4">
             <div className="flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md hover:border-4 hover:border-[#FF215076]">
               <div className="relative w-[60px] h-[60px]">
@@ -82,7 +82,7 @@ const PremiumSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 bg-transparent lg:flex-row">
+        <div className="flex flex-col gap-8 bg-transparent md:flex-row md:flex-wrap md:justify-center md:items-center md:mx-24 lg:gap-12 lg:mx-[13rem] lg:flex-row xl:mx-0">
           {PAYMENT_INFO.map((paymentInfo) => {
             return <Payment key={paymentInfo.type} paymentInfo={paymentInfo} />;
           })}
