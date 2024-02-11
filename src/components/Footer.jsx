@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer>
-      <div className="flex flex-col gap-8 items-center justify-center text-center pt-8 py-10 border-b-[1px] border-[#5B5858] w-[90%] mx-auto lg:flex-row lg:justify-between lg:items-start">
+      <div className="flex flex-col gap-8 items-center justify-center text-center pt-8 py-10 border-b-[1px] border-[#5B5858] w-[90%] mx-auto md:flex-wrap md:flex-row md:justify-between md:items-start md:px-8 lg:px-0">
         <ul className="text-[16px] flex flex-col gap-4 leading-5 lg:items-start">
           <li className="font-bold !leading-7">Information</li>
           <li className="hover:text-[#FF5276] cursor-pointer"> FAQ</li>
@@ -70,7 +70,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col py-8 gap-6 lg:flex-row-reverse lg:justify-between lg:mx-[5%] lg:py-0 lg:h-[95px]">
+      <div className="flex flex-col py-8 gap-6 md:flex-row-reverse md:justify-between md:mx-[5%] lg:py-0 md:h-[95px]">
         <ul className="flex justify-center items-center gap-6 text-xl text-white">
           <li>
             <a
@@ -96,8 +96,8 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <div className="flex gap-6 items-center justify-center">
-          <div className="w-[93px] h-[35px] lg:w-[124px] lg:h-[47px] relative">
+        <div className="flex items-center justify-evenly md:justify-between md:gap-4">
+          <div className="w-[70px] h-[35px] lg:w-[124px] lg:h-[47px] relative">
             <Image
               src={"/Logo.svg"}
               alt="logo"
