@@ -38,6 +38,15 @@ module.exports = {
       listStylePosition: {
         inside: "inside",
       },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(5deg)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+      },
     },
   },
   variants: {
@@ -67,5 +76,6 @@ module.exports = {
       };
       addUtilities(newUtilities);
     },
+    require("tailwindcss-animated"),
   ],
 };

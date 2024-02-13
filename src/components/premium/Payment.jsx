@@ -30,8 +30,8 @@ const Payment = (
           return (
             <div
               key={source}
-              className="flex justify-center items-center duration-100 w-[60px] h-[60px] 
-							ease-in-out p-2 rounded-md hover:border-[3px] hover:border-[#FF215076] relative"
+              className="flex justify-center items-center duration-100 w-[60px] h-[60px] border-[3px] border-[#000] 
+							ease-in-out p-2 rounded-md hover:border-[#FF215076] relative"
             >
               <div className="relative w-[35px] h-[35px]">
                 <Image
