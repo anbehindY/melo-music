@@ -19,13 +19,13 @@ export const PAYMENT_INFO = [
     type: "Weekly",
     price: "599",
     description: '"Seven full days of ad-free, premium music streaming."',
-    source: ["dollar", "mptLogo", "kbzPay"],
+    source: ["dollar", "mptLogo"],
   },
   {
     type: "Monthly",
     price: "1,999",
     description: '"A month of unlimited music at your command."',
-    source: ["kbzPay"],
+    source: ["kbzPay", "mptLogo", "dollar"],
   },
   {
     type: "Yearly",

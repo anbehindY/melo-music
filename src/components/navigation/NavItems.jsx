@@ -1,30 +1,26 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import React from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const NavItems = () => {
-	const router = useRouter();
+  const currentPath = usePathname();
 
-	return (
-		<ul className='hidden lg:flex flex-col gap-8 pt-40 px-4 justify-start items-center text-xl h-full lg:flex-row lg:pt-0 lg:pr-10 lg:text-base'>
-			<li
-				className='text-[#FF2150] font-semibold cursor-pointer hover:text-white'
-				onClick={() => {
-					router.push('/#premiumSection');
-				}}
-			>
-				Premium
-			</li>
-			<li
-				onClick={() => {
-					router.push('/support');
-				}}
-				className='hover:text-[#FF2150] font-semibold cursor-pointer pb-8 lg:pb-0 lg:border-l-2 lg:pl-8'
-			>
-				Support
-			</li>
-			{/* <li
+  return (
+    <ul className="hidden lg:flex flex-col gap-8 pt-40 px-4 justify-start items-center text-xl h-full lg:flex-row lg:pt-0 lg:pr-10 lg:text-base">
+      <li className="font-semibold cursor-pointer hover:text-[#FF2150]">
+        <Link href="/#premiumSection">Premium</Link>
+      </li>
+      <li className="hover:text-[#FF2150] font-semibold cursor-pointer pb-8 lg:pb-0 lg:border-l-2 lg:pl-8">
+        <Link
+          href="/support"
+          className={currentPath === "/support" && "text-[#FF2150]"}
+        >
+          Support
+        </Link>
+      </li>
+      {/* <li
 				className='font-semibold cursor-pointer border-2 rounded-full px-6 py-2 text-[#FF2150] border-[#FF2150]
 						 hover:bg-[#FF2150] hover:text-white hover:shadow-listen-btn'
 				onClick={() => {
@@ -59,8 +55,8 @@ const NavItems = () => {
 					</Collapse>
 				</div>
 			</li> */}
-		</ul>
-	);
+    </ul>
+  );
 };
 
 export default NavItems;
