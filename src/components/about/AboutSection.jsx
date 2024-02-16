@@ -12,14 +12,14 @@ const AboutSection = () => {
 
   const fadeRightAnimationVariants = {
     initial: { x: -100, opacity: 0 },
-    animate: (num) => ({
+    animate: {
       x: 0,
       opacity: 1,
       transition: {
         duration: 1,
         delay: 0.35,
       },
-    }),
+    },
   };
 
   const fadeLeftAnimationVariants = {

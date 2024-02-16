@@ -6,9 +6,9 @@ import { HiArrowDown } from "react-icons/hi";
 
 const IntroSection = () => {
   return (
-    <section className="flex flex-col items-center lg:items-start px-6 py-12 lg:pt-6 lg:gap-6 lg:justify-center xl:pt-0 2xl:pt-12 2xl:pb-24">
+    <section className="flex flex-col items-center lg:items-start px-6 py-12 lg:pt-6 lg:gap-6 lg:justify-center xl:pt-0 2xl:pt-16 2xl:pb-24">
       <div className="flex flex-col items-center lg:flex-row-reverse xl:pt-6">
-        <div className="relative w-[200px] h-[200px] lg:w-[250px] lg:h-[250px] 2xl:w-[350px] 2xl:h-[350px] animate-jump-in animate-duration-1000 animate-delay-1000 animate-ease-in">
+        <div className="relative w-[200px] h-[200px] lg:w-[250px] lg:h-[250px] 2xl:w-[350px] 2xl:h-[280px] animate-jump-in animate-duration-1000 lg:animate-delay-1000 animate-ease-in">
           <Image
             src="/meloIcon.png"
             fill
@@ -19,10 +19,10 @@ const IntroSection = () => {
           />
         </div>
         <div className="flex flex-col items-center gap-[12px] w-full lg:items-start lg:gap-0">
-          <h1 className="animate-fade-right animate-duration-1500 text-[39px] gradient md:text-[52px] md:leading-[60px] md:text-center lg:text-left lg:text-[96px] lg:leading-[93px] lg:w-[510px] lg:mb-6">
+          <h1 className="animate-fade-right animate-duration-1500 animate-delay-700 lg:animate-delay-none text-[39px] gradient md:text-[52px] md:leading-[60px] md:text-center lg:text-left lg:text-[96px] lg:leading-[93px] lg:w-[510px] lg:mb-6">
             Melo <span className="text-white font-semibold">to your</span> Heart
           </h1>
-          <p className="animate-fade-right animate-duration-1000 animate-delay-[500ms] font-[16px] leading-6 tracking-widest w-[320px] md:w-[420px] lg:w-[600px] lg:mb-4">
+          <p className="animate-fade-right animate-duration-1000 animate-delay-1000 lg:animate-delay-[500ms] font-[16px] leading-6 tracking-widest w-[320px] md:w-[420px] lg:w-[600px] lg:mb-4">
             With Melo Music, you can download and enjoy wide varieties of songs
             from classic traditional songs to epic trending music genres.
           </p>
