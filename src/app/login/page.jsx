@@ -35,7 +35,7 @@ export default function LoginPage() {
           <div className="bg-[#96969647] border-[#666666DB] border-[2px] rounded-xl w-full lg:w-11/12 mx-auto py-4 lg:py-28 text-white leading-7 flex flex-col gap-4 lg:gap-8">
             <div className="flex flex-col justify-start items-center gap-4 h-[calc(100vh-125px)]">
               <p>Signed in as {session.user.email}</p>
-              <code className="text-center text-sm">{session.accessToken}</code>
+              <code className="text-center text-sm">{session.id_token}</code>
             </div>
           </div>
         </div>
