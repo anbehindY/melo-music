@@ -7,30 +7,28 @@ const Footer = () => {
   return (
     <footer>
       <div className="flex flex-col gap-8 items-center justify-center text-center pt-8 py-10 border-b-[1px] border-[#5B5858] w-[90%] mx-auto md:flex-wrap md:flex-row md:justify-between md:items-start md:px-8 lg:px-0">
-        <ul className="text-[16px] flex flex-col gap-4 leading-5 lg:items-start">
-          <li className="font-bold !leading-7">Information</li>
-          <li className="hover:text-[#FF5276] cursor-pointer"> FAQ</li>
-          <li className="hover:text-[#FF5276] cursor-pointer">
-            <Link href="/support">Support</Link>
-          </li>
-        </ul>
-        <ul className="text-[16px] flex flex-col gap-4 leading-5 lg:items-start">
-          <li className="font-bold !leading-7">Melo</li>
-          <li className="hover:text-[#FF5276] cursor-pointer"> About Us</li>
-          <li className="hover:text-[#FF5276] cursor-pointer"> Contact Us</li>
-        </ul>
-        <ul className="text-[16px] flex flex-col gap-4 mb-6 leading-5 lg:items-start">
-          <li className="font-bold !leading-7">Legal</li>
-          <li className="hover:text-[#FF5276]">
-            <Link href="/terms-conditions">Terms and Conditions</Link>
-          </li>
-          <li className="hover:text-[#FF5276]">
-            <Link href="/privacy-policy">Privacy Policy</Link>
-          </li>
-          <li className="hover:text-[#FF5276]">
-            <Link href="/terms-of-use">Terms of Use</Link>
-          </li>
-        </ul>
+        <div className="flex flex-col gap-8 md:flex-row w-full justify-evenly lg:w-auto lg:gap-40">
+          <ul className="text-[16px] flex flex-col gap-4 leading-5 lg:items-start">
+            <li className="font-bold !leading-7">Information</li>
+            <li className="hover:text-[#FF5276] cursor-pointer"> FAQ</li>
+            <li className="hover:text-[#FF5276] cursor-pointer">
+              <Link href="/support">Support</Link>
+            </li>
+            <li className="hover:text-[#FF5276] cursor-pointer"> About Us</li>
+          </ul>
+          <ul className="text-[16px] flex flex-col gap-4 mb-6 leading-5 lg:items-start">
+            <li className="font-bold !leading-7">Legal</li>
+            <li className="hover:text-[#FF5276]">
+              <Link href="/terms-conditions">Terms and Conditions</Link>
+            </li>
+            <li className="hover:text-[#FF5276]">
+              <Link href="/privacy-policy">Privacy Policy</Link>
+            </li>
+            <li className="hover:text-[#FF5276]">
+              <Link href="/terms-of-use">Terms of Use</Link>
+            </li>
+          </ul>
+        </div>
         <ul className="text-left text-sm leading-4 flex flex-col gap-8 items-start w-[95%] lg:w-[380px] ">
           <li className="flex gap-6 items-start leading-4">
             <div className="relative w-5 h-6">
