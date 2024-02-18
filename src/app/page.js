@@ -1,6 +1,7 @@
 import IntroSection from "@/components/IntroSection";
 import AboutSection from "@/components/about/AboutSection";
 import PremiumSection from "@/components/premium/PremiumSection";
+import GradientBackground from "@/components/shared/GradientBackground";
 import MainLayout from "@/components/shared/MainLayout";
 import { endpoints } from "@/utils/endpoints";
 import axios from "axios";
@@ -43,12 +44,14 @@ export async function generateMetadata({ searchParams }) {
 
 export default function Home() {
   return (
-    <MainLayout>
-      <main className="flex flex-col items-center gap-4">
-        <IntroSection />
-        <AboutSection />
-        <PremiumSection />
-      </main>
-    </MainLayout>
+    <GradientBackground>
+      <MainLayout>
+        <main className="flex flex-col items-center gap-4">
+          <IntroSection />
+          <AboutSection />
+          <PremiumSection />
+        </main>
+      </MainLayout>
+    </GradientBackground>
   );
 }

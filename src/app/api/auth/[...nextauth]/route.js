@@ -50,16 +50,15 @@ export const authOptions = {
   callbacks: {
     async session({ session, token, user }) {
       session.user.id = token.id;
-      session.accessToken = token.accessToken;
       session.id_token = token.id_token;
       return session;
     },
-    async jwt({ token, user, account, profile, isNewUser }) {
+    async jwt({ token, user, account }) {
       if (user) {
         token.id = user.id;
+        token.id_token = user.id_token;
       }
       if (account) {
-        token.accessToken = account.access_token;
         token.id_token = account.id_token;
       }
       return token;

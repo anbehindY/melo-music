@@ -23,6 +23,7 @@ module.exports = {
         "big-bag": "url(/bigbag.svg)",
         "eternal-gosh": "url(/eternalgosh.svg)",
         "r-zarni": "url(/RZarni.svg)",
+        "gradient-rect": "url(/background/gradient-rect.png)",
       },
       boxShadow: {
         "listen-btn": "0 0 38px 2px rgba(190, 12, 12, 0.82)",

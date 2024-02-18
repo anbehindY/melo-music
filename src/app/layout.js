@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Faustina, Instrument_Sans } from "next/font/google";
 import NextAuthProvider from "@/components/NextAuthProvider";
+import { Toaster } from "react-hot-toast";
 
 export const faustina = Faustina({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
     >
       <body>
         <NextAuthProvider>{children}</NextAuthProvider>
+        <Toaster />
       </body>
     </html>
   );
