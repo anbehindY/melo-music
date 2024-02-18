@@ -25,13 +25,19 @@ export const PAYMENT_INFO = [
     type: "Monthly",
     price: "1,999",
     description: '"A month of unlimited music at your command."',
-    source: ["kbzPay", "mptLogo", "dollar"],
+    source: ["kbzPay", "mptLogo", "dollar", "dinger"],
   },
   {
-    type: "Yearly",
-    price: "19,999",
+    type: "Quarterly",
+    price: "5,999",
+    description: '"Unlock your three months of high-quality music."',
+    source: ["kbzPay", "dinger"],
+  },
+  {
+    type: "Half Yearly",
+    price: "9,999",
     description: '"Commit to a year of premium music streaming."',
-    source: ["kbzPay"],
+    source: ["kbzPay", "dinger"],
   },
 ];
 

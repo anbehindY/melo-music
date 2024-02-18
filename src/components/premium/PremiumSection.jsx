@@ -24,7 +24,7 @@ const PremiumSection = () => {
         <h4 className="w-[250px] text-center text-[24px] font-[700] lg:w-full lg:text-[40px] lg:leading-[56px] lg:mt-2">
           Available Payments for Premium
         </h4>
-        <div className="flex flex-col items-center justify-center gap-8 pb-4 md:flex-row">
+        <div className="flex flex-col items-center justify-center gap-y-8 gap-4 pb-4 md:flex-row">
           <div className="flex justify-center items-center gap-4">
             <div className="flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md border-4 border-transparent hover:border-[#FF215076]">
               <div className="relative w-[60px] h-[60px]">
@@ -84,9 +84,21 @@ const PremiumSection = () => {
                 />
               </div>
             </div>
+            <div className="flex justify-center items-center duration-100 w-[90px] h-[90px] ease-in-out p-2 rounded-md border-transparent border-4 hover:border-[#FF215076]">
+              <div className="relative w-[60px] h-[60px]">
+                <Image
+                  src="/dinger.png"
+                  width={60}
+                  height={60}
+                  alt="cbPay"
+                  quality={100}
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 bg-transparent md:flex-row md:flex-wrap md:justify-center md:items-center md:mx-24 lg:gap-12 lg:mx-[13rem] lg:flex-row xl:mx-0">
+        <div className="flex flex-col gap-8 bg-transparent md:flex-row md:flex-wrap md:justify-center md:items-center md:mx-24 lg:gap-12 lg:mx-[0rem] lg:flex-row xl:mx-[9rem]">
           {PAYMENT_INFO.map((paymentInfo) => {
             return <Payment key={paymentInfo.type} paymentInfo={paymentInfo} />;
           })}

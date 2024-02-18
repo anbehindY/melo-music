@@ -64,7 +64,7 @@ const Footer = () => {
                 alt="Location icon"
               />
             </div>
-            support@melomm.com
+            <Link href="mailto:support@melomm.com">support@melomm.com</Link>
           </li>
         </ul>
       </div>

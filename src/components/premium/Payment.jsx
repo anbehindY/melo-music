@@ -11,12 +11,12 @@ const Payment = (
   }
 ) => {
   return (
-    <div className="w-[262px] md:h-[300px] border-gradient flex flex-col gap-[10px] px-6 py-8">
+    <div className="w-[300px] md:h-[300px] border-gradient flex flex-col gap-[10px] px-6 py-8">
       <div className="flex justify-between">
         <h4 className="font-[700] text-xl">{paymentInfo.type}</h4>
         <p>
           <span className="gradient font-[700] text-[20px]">
-            {paymentInfo.price}{" "}
+            {paymentInfo.price}
           </span>
           Ks
         </p>
@@ -31,7 +31,7 @@ const Payment = (
             <div
               key={source}
               className="flex justify-center items-center duration-100 w-[60px] h-[60px] border-[3px] border-transparent
-							ease-in-out p-2 rounded-md hover:border-[#FF215076] relative"
+							ease-in-out p-1 rounded-md hover:border-[#FF215076] relative"
             >
               <div className="relative w-[35px] h-[35px]">
                 <Image
