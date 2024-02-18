@@ -1,13 +1,12 @@
 import Navigation from "@/components/navigation/Navigation";
 import Footer from "@/components/Footer";
-import GradientBackground from "./GradientBackground";
 
-export default function MainLayout({ children }) {
+export default function MainLayout({ children, isLoggedIn = false }) {
   return (
-    <GradientBackground>
-      <Navigation />
+    <>
+      <Navigation isLoggedIn={isLoggedIn} />
       {children}
       <Footer />
-    </GradientBackground>
+    </>
   );
 }

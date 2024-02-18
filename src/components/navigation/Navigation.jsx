@@ -5,8 +5,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import NavItems from "./NavItems";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { signOut } from "next-auth/react";
 
-const Navigation = () => {
+const Navigation = ({ isLoggedIn = false }) => {
   const router = useRouter();
   const [navActive, setNavActive] = useState(false);
   const { scrollY } = useScroll();
@@ -30,7 +31,7 @@ const Navigation = () => {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="flex items-center justify-between flex-wrap px-6 h-[99px] bg-[#0F0F0F66] sticky top-0 w-full z-50 lg:h-[120px] lg:px-16"
+        className="flex items-center justify-between flex-wrap px-6 h-[99px] bg-[#0F0F0F] sticky top-0 w-full z-50 lg:h-[120px] lg:px-16 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10"
       >
         <div className="relative w-[100px] h-[40px] lg:w-[200px] lg:h-[77px] cursor-pointer">
           <Image
@@ -54,7 +55,7 @@ const Navigation = () => {
 					  ${navActive ? "barActive" : ""}`}
           />
         </button>
-        <NavItems />
+        <NavItems isLoggedIn={isLoggedIn} />
       </motion.nav>
       <div
         className={`fixed top-0 ${
@@ -115,6 +116,17 @@ const Navigation = () => {
                   </Collapse>
                 </div>
               </li> */}
+          {isLoggedIn && (
+            <li>
+              <button
+                className="text-lg font-semibold cursor-pointer border-2 rounded-full px-6 py-2 text-[#FF2150] border-[#FF2150]
+            hover:bg-[#FF2150] hover:text-white hover:shadow-listen-btn"
+                onClick={() => signOut()}
+              >
+                Sign out
+              </button>
+            </li>
+          )}
         </ul>
       </div>
     </>
