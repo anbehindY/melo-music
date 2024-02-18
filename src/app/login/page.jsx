@@ -50,8 +50,7 @@ export default function LoginPage() {
           },
         }
       );
-      console.log(res.data);
-      toast.success("Account deleted successfully");
+      toast.success(res.data);
       setTimeout(() => {
         router.push("/");
       }, 2000);
@@ -100,7 +99,7 @@ export default function LoginPage() {
               <button
                 className="w-[131px] h-12 bg-[#434343] rounded-md"
                 onClick={() => {
-                  router.push("/");
+                  signOut();
                 }}
               >
                 Cancel
