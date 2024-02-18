@@ -98,7 +98,7 @@ const PremiumSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 bg-transparent md:flex-row md:flex-wrap md:justify-center md:items-center md:mx-24 lg:gap-12 lg:mx-[0rem] lg:flex-row xl:mx-[9rem]">
+        <div className="flex flex-col gap-8 bg-transparent md:flex-row md:flex-wrap md:justify-center md:items-center md:mx-20 lg:gap-12 lg:mx-[6rem] lg:flex-row xl:mx-[9rem]">
           {PAYMENT_INFO.map((paymentInfo) => {
             return <Payment key={paymentInfo.type} paymentInfo={paymentInfo} />;
           })}
