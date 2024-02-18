@@ -16,7 +16,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  font-family: var(--font-instrument-sans);
+  font-family: var(--font-instrument-sans), sans-serif;
 }
 
 h1,
