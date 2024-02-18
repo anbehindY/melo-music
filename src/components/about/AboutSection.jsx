@@ -16,8 +16,8 @@ const AboutSection = () => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1,
-        delay: 0.35,
+        duration: 1.5,
+        delay: 0.15,
       },
     },
   };
@@ -28,8 +28,8 @@ const AboutSection = () => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1,
-        delay: 0.35,
+        duration: 1.5,
+        delay: 0.15,
       },
     },
   };
