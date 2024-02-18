@@ -2,16 +2,17 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import NavItems from "./NavItems";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { signOut } from "next-auth/react";
+import Link from "next/link";
 
 const Navigation = ({ isLoggedIn = false }) => {
-  const router = useRouter();
   const [navActive, setNavActive] = useState(false);
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
+  const currentPath = usePathname();
 
   useMotionValueEvent(scrollY, "change", (value) => {
     const previous = scrollY.getPrevious();
@@ -33,15 +34,17 @@ const Navigation = ({ isLoggedIn = false }) => {
         transition={{ duration: 0.3, ease: "easeInOut" }}
         className="flex items-center justify-between flex-wrap px-6 h-[99px] bg-[#0F0F0F] sticky top-0 w-full z-50 lg:h-[120px] lg:px-16 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10"
       >
-        <div className="relative w-[100px] h-[40px] lg:w-[200px] lg:h-[77px] cursor-pointer">
+        <Link
+          href={"/"}
+          className="relative w-[100px] h-[40px] lg:w-[200px] lg:h-[77px] cursor-pointer"
+        >
           <Image
             src="/Logo.svg"
             fill
             alt="Melo logo"
             style={{ objectFit: "contain" }}
-            onClick={() => router.push("/")}
           />
-        </div>
+        </Link>
         <button
           className={`w-[36px] h-[36px] z-[9] bg-[#FF2150] rounded-lg flex flex-col gap-1 justify-center items-center duration-[0.4s] nav-line lg:hidden 
 				  ${navActive ? "active" : ""}`}
@@ -64,22 +67,25 @@ const Navigation = ({ isLoggedIn = false }) => {
       >
         <ul className="flex flex-col gap-8 pt-40 px-4 justify-start items-center h-full">
           <li
-            className="text-[#FF2150] font-semibold text-xl cursor-pointer hover:text-white"
+            className="font-semibold text-xl cursor-pointer hover:text-[#FF2150]"
             onClick={() => {
               setNavActive(false);
-              router.push("/#premiumSection");
             }}
           >
-            Premium
+            <Link href={"/#premiumSection"}>Premium</Link>
           </li>
           <li
             onClick={() => {
               setNavActive(false);
-              router.push("/faq");
             }}
             className="hover:text-[#FF2150] text-xl font-semibold cursor-pointer border-t-2 pt-8"
           >
-            FAQ
+            <Link
+              href={"/faq"}
+              className={currentPath === "/faq" ? "text-[#FF2150]" : ""}
+            >
+              FAQ
+            </Link>
           </li>
           {/* <li
                 className='text-xl font-semibold cursor-pointer border-2 rounded-full px-6 py-2 text-[#FF2150] border-[#FF2150]

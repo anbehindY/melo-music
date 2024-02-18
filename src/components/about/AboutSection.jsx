@@ -4,7 +4,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { ARTISTS } from "@/utils/data";
 import Artist from "./Artist";
-import ReactPlayer from "react-player";
 import { motion } from "framer-motion";
 
 const AboutSection = () => {
@@ -44,16 +43,16 @@ const AboutSection = () => {
         <h2 className="text-[36px] font-semibold md:mb-2 lg:text-[96px] lg:leading-[93px] lg:mb-8">
           Take a look at <span className="gradient">Melo</span>
         </h2>
-        {isClient && (
-          <div className="md:w-[90%] md:h-[300px] lg:w-[80%] lg:h-[450px] xl:w-[75%] xl:h-[500px] 2xl:h-[600px]">
-            <ReactPlayer
-              url={"https://youtu.be/OQz7ZrfFxTc?si=la4fZ9utoKLFzZQ-"}
-              height={"100%"}
-              width={"100%"}
-              controls
-            />
-          </div>
-        )}
+        <div className="md:w-[90%] md:h-[300px] lg:w-[80%] lg:h-[450px] xl:w-[75%] xl:h-[500px] 2xl:h-[600px]">
+          <iframe
+            src="https://www.youtube.com/embed/OQz7ZrfFxTc"
+            title='အလွမ်းပြေ သီချင်းတွေနဲ့အတူ "မယ်လို"'
+            controls
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            width="100%"
+            height="100%"
+          />
+        </div>
       </div>
       <div className="flex flex-col gap-6 items-center lg:mb-20">
         <h2 className="text-[36px] font-semibold lg:text-[96px] lg:leading-[93px] lg:mb-8">

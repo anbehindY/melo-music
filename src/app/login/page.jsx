@@ -81,15 +81,15 @@ export default function LoginPage() {
               Sign out
             </button>
           </nav>
-          <div className="bg-black md:w-[572px] lg:w-[754px] flex flex-col justify-self-center justify-center items-center rounded-3xl p-4">
-            <div className="bg-[#27282E] h-full px-12 py-8 rounded-t-lg">
+          <div className="bg-black md:w-[572px] lg:w-[754px] flex flex-col justify-center items-center rounded-xl p-1">
+            <div className="bg-[#27282E] h-full px-8 py-2 md:px-12 md:py-8 rounded-t-lg">
               <div className="border-b border-[#bfbfbf] py-4 flex flex-col md:flex-row justify-between ">
                 <p className="text-2xl mb-4 md:mb-0">
                   Do you want to delete your account?
                 </p>
                 <TrashCan />
               </div>
-              <p className="py-3 text-xl leading-6 text-[#bfbfbf]">
+              <p className="py-3 text-base md:text-lg  leading-6 text-[#bfbfbf]">
                 This will delete all your data from Melo Music. All your data,
                 music collections will be deleted. Are you sure you want to
                 delete?
