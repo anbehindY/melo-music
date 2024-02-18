@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="flex flex-col gap-8 md:flex-row w-full justify-evenly lg:w-auto lg:gap-40">
           <ul className="text-[16px] flex flex-col gap-4 leading-5 lg:items-start">
             <li className="font-bold !leading-7">Information</li>
-            <li className="hover:text-[#FF5276] cursor-pointer"> FAQ</li>
             <li className="hover:text-[#FF5276] cursor-pointer">
-              <Link href="/support">Support</Link>
+              <Link href={"/faq"}>FAQ</Link>
             </li>
+            <li className="hover:text-[#FF5276] cursor-pointer">Support</li>
             <li className="hover:text-[#FF5276] cursor-pointer"> About Us</li>
           </ul>
           <ul className="text-[16px] flex flex-col gap-4 mb-6 leading-5 lg:items-start">

@@ -75,11 +75,11 @@ const Navigation = ({ isLoggedIn = false }) => {
           <li
             onClick={() => {
               setNavActive(false);
-              router.push("/support");
+              router.push("/faq");
             }}
             className="hover:text-[#FF2150] text-xl font-semibold cursor-pointer border-t-2 pt-8"
           >
-            Support
+            FAQ
           </li>
           {/* <li
                 className='text-xl font-semibold cursor-pointer border-2 rounded-full px-6 py-2 text-[#FF2150] border-[#FF2150]

@@ -109,8 +109,7 @@ const AboutSection = () => {
             Offline <span className="gradient">Listening</span>
           </h2>
           <p className="px-8 font-[16px] leading-6 tracking-widest md:w-[550px] lg:px-0 lg:w-[600px] lg:text-xl lg:leading-[35px]">
-            No Wi-Fi? No problem. Download your favorite tracks and enjoy them
-            on the go, Anytime, Anywhere.
+            Your Soundtrack, Unplugged: Explore, Discover, Listen Anywhere.
           </p>
         </motion.div>
         <motion.div

@@ -15,10 +15,10 @@ const NavItems = ({ isLoggedIn }) => {
       </li>
       <li className="hover:text-[#FF2150] font-semibold cursor-pointer pb-8 lg:pb-0 lg:border-l-2 lg:pl-8">
         <Link
-          href="/support"
-          className={currentPath === "/support" ? "text-[#FF2150]" : ""}
+          href="/faq"
+          className={currentPath === "/faq" ? "text-[#FF2150]" : ""}
         >
-          Support
+          FAQ
         </Link>
       </li>
 
