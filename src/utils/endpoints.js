@@ -16,4 +16,10 @@ export const endpoints = Object.freeze({
   ogData: {
     get: `${prefix}/deeplink-data`,
   },
+  account: {
+    delete: `${prefix}/user/delete/account`,
+  },
+  login: {
+    google: `${prefix}/auth/google-login`,
+  },
 });
